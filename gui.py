@@ -1,4 +1,7 @@
-import tkinter as tk
 
+import re
 
-window = tk.Tk()
+ip = "192.168.2.1\\24"
+ip = ip.replace("."," ")
+print(ip)
+print(re.split("\s",ip))
